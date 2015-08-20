@@ -50,3 +50,4 @@ end
 
 gem 'rspec-rails', group: [ :test ]
 gem 'rspec-rails', group: [ :test ]
+gem 'rspec-rails', group: [ :test ]
