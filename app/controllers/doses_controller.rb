@@ -1,5 +1,5 @@
 class DosesController < ApplicationController
-  before_action :find_dose, only: [:destroy]
+  before_action :find_cocktail
 
   def new
     @dose = Dose.new
@@ -18,8 +18,8 @@ class DosesController < ApplicationController
 
   private
 
-  def find_dose
-    @dose = Dose.find(params[:dose_id])
+  def find_cocktail
+    @cocktail = Cocktail.find(params[:cocktail_id])
   end
 
   def dose_params
