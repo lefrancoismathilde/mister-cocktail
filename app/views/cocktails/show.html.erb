@@ -2,6 +2,7 @@
   <div class="row">
     <div class="col-xs-12.col-md-4.col-offset-4 text-center">
       <h2><%= @cocktail.name %></h2>
+      <%= image_tag @cocktail.picture.url(:medium) %>
 
         <% @cocktail.doses.each do |dose| %>
           <p><%= dose.description %> - <%= dose.ingredient.name %> </p>
@@ -18,3 +19,4 @@
     </div>
   </div>
 </div>
+
