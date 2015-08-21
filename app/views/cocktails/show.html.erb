@@ -1,10 +1,20 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12.col-md-4.col-offset-4 text-center">
-      <h2>Super choix de cocktail !</h2>
-        <p><%= @cocktail.name %></p>
-        <%= link_to "New dose", new_cocktail_dose_path(@cocktail) %>
+      <h2><%= @cocktail.name %></h2>
+
+        <% @cocktail.doses.each do |dose| %>
+          <p><%= dose.description %> - <%= dose.ingredient.name %> </p>
+        <% end %>
         <%= link_to "Back", cocktails_path %>
+
+      <h3>Come on, add you're new dose ! </h3>
+        <%= simple_form_for [@cocktail, @new_dose] do |f| %>
+          <%= f.input :description, placeholder: "6cl" %>
+          <%= f.input :ingredient_id, collection: Ingredient.all, as: :select, prompt: "Choose an ingredient" %>
+          <%= f.button :submit, class: "btn btn-primary" %>
+          <%= link_to "Delete", cocktails_path %>
+        <% end %>
     </div>
   </div>
 </div>

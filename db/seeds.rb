@@ -10,3 +10,12 @@
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "sugar")
+Ingredient.create(name: "gin")
+Ingredient.create(name: "juice")
+Ingredient.create(name: "rhum")
+
+Cocktail.create(name:"Mojito")
+Cocktail.create(name:"Black Russian")
+Cocktail.create(name:"Pina Colada")
+Cocktail.create(name:"Caipi")

@@ -1,48 +1,38 @@
-<nav class="navbar navbar-default navbar-fixed-top navbar-bootstrap-wagon" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">
-        <img src="logo.png" alt="">
-      </a>
-    </div>
+<nav class="navbar-wagon">
+  <div class="container-fluid navbar-wagon-container">
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="#">
-            <i class="fa fa-envelope-o"></i> Contact
-          </a>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-            <img src="http://placehold.it/30x30" class="img-avatar" alt="">
-            Follow-us <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu" role="menu">
-            <li>
-              <a href="https://www.facebook.com/lewagonformation">
-                <i class="fa fa-facebook-square"></i> Facebook
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/lewagonparis">
-                <i class="fa fa-twitter-square"></i> Twitter
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#" class="btn">Publish an announce</a>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    <a href="/">
+      <img src="../images/logo.png">
+    </a>
+
+    <form action="" class="navbar-wagon-search">
+      <input type="text" class="navbar-wagon-search-input" placeholder="Search for featured stuff">
+      <button type="submit" class="navbar-wagon-search-btn">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+    <hr>
+    <a href="" class="navbar-wagon-item navbar-wagon-link">Contact</a>
+    <hr>
+    <a href="" class="navbar-wagon-item navbar-wagon-link hidden-xs">
+      <div class="icon-badge-container">
+        <i class="fa fa-envelope-o"></i>
+        <div class="icon-badge icon-badge-blue">3</div>
+      </div>
+    </a>
+    <hr>
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <img src="https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <a href="cocktails/new" class="navbar-wagon-item navbar-wagon-button btn">Add a cocktail</a>
+  </div>
 </nav>
+l
