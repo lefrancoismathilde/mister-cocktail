@@ -1,15 +1,12 @@
-<div class="container text-center">
-  <div class="row">
-    <div class="col-xs-12.col-md-4.col-offset-md-4">
-      <h2>Welcome to the Mister Cocktail App !</h2>
-      <p>Let's get some inspiration</p>
+<div class="text-center">
+<h1 class="text-center"> Welcome to the Cocktail factory</h1>
+<p>All cocktails are made out with <3 </p>
+<div class="container">
+ <div class="row">
+<% @cocktails.each do |cocktail| %>
+   <div class="col-xs-12 col-sm-3">
+     <%= render "card", cocktail: cocktail %>
+ </div>
 
-      <% @cocktails.each do |cocktail| %>
-        <h4><strong><%= cocktail.name %></strong></h4>
-        <%= link_to "Details", cocktail_path(cocktail) %>
-        <%= link_to "Delete", cocktail_path(cocktail), method: :delete %>
-      <% end %>
-
-    </div>
-  </div>
+<%end%>
 </div>
